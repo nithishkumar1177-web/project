@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Graphic Designer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#home" class="logo">Your Name</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <h1>Hi, I'm <span>Your Name</span></h1>
+    <p class="role">Graphic Designer</p>
+    <p class="tagline">I create bold logos, posters and social media designs that people remember.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <!-- ABOUT & SKILLS -->
+  <section id="about">
+    <h2>About &amp; Skills</h2>
+    <p class="about-text">I am a creative graphic designer who turns ideas into clean, colourful and meaningful visuals for brands, events and social media.</p>
+    <div class="tools">
+      <span>Photoshop</span>
+      <span>Illustrator</span>
+      <span>Figma</span>
+      <span>Canva</span>
+    </div>
+    <div class="skills">
+      <div class="skill">Logo Design</div>
+      <div class="skill">Typography</div>
+      <div class="skill">Colour Theory</div>
+      <div class="skill">Poster Design</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <input type="search" id="search" placeholder="Search projects...">
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="branding">Branding</button>
+      <button class="filter" data-filter="poster">Posters</button>
+      <button class="filter" data-filter="social">Social Media</button>
+    </div>
+
+    <div class="gallery">
+      <figure class="card" data-category="branding">
+        <img src="images/project-1-branding.png" alt="Project One - branding">
+        <figcaption>Project One - Branding</figcaption>
+      </figure>
+      <figure class="card" data-category="poster">
+        <img src="images/project-2-poster.png" alt="Project Two - poster">
+        <figcaption>Project Two - Poster</figcaption>
+      </figure>
+      <figure class="card" data-category="poster">
+        <img src="images/project-3-poster.png" alt="Project Three - poster">
+        <figcaption>Project Three - Poster</figcaption>
+      </figure>
+      <figure class="card" data-category="social">
+        <img src="images/project-4-social.png" alt="Project Four - social media">
+        <figcaption>Project Four - Social Media</figcaption>
+      </figure>
+      <figure class="card" data-category="social">
+        <img src="images/project-5-social.png" alt="Project Five - social media">
+        <figcaption>Project Five - Social Media</figcaption>
+      </figure>
+      <figure class="card" data-category="branding">
+        <img src="images/project-6-branding.png" alt="Project Six - branding">
+        <figcaption>Project Six - Branding</figcaption>
+      </figure>
+    </div>
+    <p id="no-results" class="no-results">No projects found.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="about-text">Let's work together. Reach out through any of these links.</p>
+    <div class="contact-links">
+      <a href="mailto:yourname@example.com">Email</a>
+      <a href="#" target="_blank" rel="noopener">Behance</a>
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>&copy; <span id="year"></span> Your Name. All rights reserved.</footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox"><img id="lightbox-img" alt=""></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
